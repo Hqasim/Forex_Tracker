@@ -14,7 +14,7 @@ open_market_sell = tree.xpath('//*[@id="dollar_rate_world"]/tbody/tr[1]/td[4]/te
 inter_bank_buy = tree.xpath('//*[@id="inter_bank_table"]/tbody/tr[4]/td[3]/text()')
 inter_bank_sell = tree.xpath('//*[@id="inter_bank_table"]/tbody/tr[4]/td[4]/text()')
 
-date = tree.xpath('//*[@id="main-content"]/div/div[1]/div/h1/small/text()')
+#date = tree.xpath('//*[@id="main-content"]/div/div[1]/div/h1/small/text()')
 
 # Tkinter GUI
 root = Tk()
@@ -33,6 +33,6 @@ l7 = Label(root, text = "Selling").grid(row=5, column = 2)
 d3 = Label(root, text = open_market_buy).grid(row=6, column = 0) # DATA 3
 d4 = Label(root, text = open_market_sell).grid(row=6, column = 2) # DATA 4
 
-date_GUI = Label(root, text = date[0]).grid(row=7, column = 1)
+# date_GUI = Label(root, text = date[0]).grid(row=7, column = 1)
 
 root.mainloop()

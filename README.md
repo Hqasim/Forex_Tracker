@@ -1,2 +1,3 @@
 # Forex_Tracker
-Tracks Forex exchange rates
+Tracks: USD to PKR market rate.
+Sources: "https://hamariweb.com/finance/forex/".
