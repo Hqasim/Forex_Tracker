@@ -31,8 +31,3 @@ class RatesSpider(scrapy.Spider):
             "GBP": GBP + " Units per USD",
         }
 
-
-
-
-#  /html/body/table/tr[1]/td[2]/table/tr[3]/td/table/tr[1]/td/table/tr/td[2]/table/tr[6]/td[3]
-# //html/body/table/tr[1]/td[2]/table/tr[3]/td/table/tr[1]/td/table/tr/td[2]/table/tr[6]/td[3]/text()

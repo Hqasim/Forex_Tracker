@@ -1,6 +1,6 @@
 # Forex_Tracker
 
-Scrapes data of foreign exchange currency conversion rates.
+Simple python scrapy project which scrapes data of international forex currencies and outputs them in JSON format.
 
 ## Dependencies
 
@@ -10,13 +10,13 @@ Scrapes data of foreign exchange currency conversion rates.
 
 ## Steps to reproduce
 
-Create a python virtual environment
+Clone the repository and create a python virtual environment in root directory
 
 ```
 python -m venv env
 ```
 
-Active virtual enviroment
+Active virtual enviroment (linux command)
 
 ```
 source env/Scripts/activate
@@ -28,8 +28,25 @@ Install scrapy in virtual enviroment
 pip install scrapy
 ```
 
-Navigate to tracker directory from root and run the following command to scrape data
+Navigate to tracker folder and enter the following command to scrap data and receive output in JSON file
 
 ```
-scrapy crawl rates
+scrapy crawl rates -o rates.json
+```
+
+Sample output of script in JSON format
+
+```
+[
+  {
+    "Title": "Forex Curreny Rates As on Mon, Jun 27 2022, 10:46 GMT",
+    "CNY": "6.6916 Units per USD",
+    "EUR": "0.9472 Units per USD",
+    "JPY": "135.1851 Units per USD",
+    "PKR": "208.3277 Units per USD",
+    "SAR": "3.75 Units per USD",
+    "AED": "3.6725 Units per USD",
+    "GBP": "0.8152 Units per USD"
+  }
+]
 ```
